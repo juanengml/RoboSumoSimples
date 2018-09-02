@@ -30,7 +30,7 @@ void loop()
 
   linha = digitalRead(Sensor_linha);
    
-  if ( linha == True && cmMsec == 15.0){
+  if ( linha == HIGH && cmMsec == 15.0){
       Motor(255,255);
       delay(1000);
   } else {
